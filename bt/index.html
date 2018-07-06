@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 40px;
+        background: red;
+    }
+    
+    .main {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    ul {
+        width: 500px;
+        height: 30px;
+        display: flex;
+    }
+    
+    li {
+        flex: 1;
+        line-height: 40px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <header>
+            <div class="wrapper main">
+                <ul class="content">
+                    <li>你猜</li>
+                    <li>你猜</li>
+                    <li>你猜</li>
+                    <li>你猜</li>
+                    <li>你猜</li>
+                    <li>你猜</li>
+                    <li>你猜</li>
+                </ul>
+
+            </div>
+        </header>
+    </div>
+    <script src="BScroll.js"></script>
+    <script>
+        var scroll = new BScroll('.main', {
+            scrollX: true,
+            probeType: 2
+        })
+    </script>
+</body>
+
+</html>
